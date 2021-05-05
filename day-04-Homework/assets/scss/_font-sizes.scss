@@ -1,0 +1,8 @@
+
+$i : 10;
+@while $i > 0 {
+    .txt-size-#{$i}{
+        font-size: #{$i*5}px;
+    }
+    $i: $i - 1;
+}

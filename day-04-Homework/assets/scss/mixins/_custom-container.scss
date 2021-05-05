@@ -1,0 +1,7 @@
+@mixin make-container($container-px) {
+    width: 100%;
+    padding-right: $container-px;
+    padding-left: $container-px;
+    margin-right: auto;
+    margin-left: auto;
+  }

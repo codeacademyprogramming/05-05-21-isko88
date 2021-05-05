@@ -1,0 +1,12 @@
+@import '../mixins/colors';
+$txtcolors:(
+    'black':#000,
+    'white':#fff,
+    'orange':#F2994A,
+    'primary':#313dee,
+    'gray':#EDEDF0,
+    'zumthor':#EBF2FF,
+    );
+    @each $key,$value in $txtcolors {
+        @include set_colors($key,$value,'txt');
+    }

@@ -1,0 +1,18 @@
+
+@mixin make_grid_col($colcnt) {
+    @for $i from 1 through $colcnt {
+        .col-#{$i} {
+            width: 100% / ($colcnt / $i);
+        }
+    }
+}
+
+@mixin responsive-grid($breaker,$colnum) {
+    @each $key,$value in $breaker {
+        .col-#{$key}-#{$colnum}{
+            @media screen and(max-width:$value){
+                width: 100% / (12 / $colnum);
+            }          
+        }
+    }
+}

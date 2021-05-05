@@ -1,0 +1,47 @@
+@import 'mixins/grid';
+@import 'mixins/box-model';
+@import 'colors/bgcolors';
+@import 'colors/txtcolors';
+@import 'font-sizes';
+@import 'flexible';
+
+@include make_grid_col(12);
+$breaker : (
+    'sm':540px,
+    'md':720px,
+    'lg':960px,
+    'xl':1140px,
+);
+@for $i from 1 through 12 {
+    @include responsive-grid($breaker,$i)
+}
+
+@include set-margin-or-padding('p');
+@include set-margin-or-padding('m');
+.logo {
+    svg{
+        @extend .bg-primary;
+    }
+}
+
+#search{
+        background:url('/assets/images/search-icon.png') no-repeat 7px 7px;
+        padding-left: 30px;
+        width: 55%;
+        height: 30px;
+        border-radius: 99px;
+}
+#signin{
+    border: 1px solid #9DC2FF;
+    border-radius: 4px;
+    font-weight: bold;
+}
+#mycart{
+    box-shadow: 0px 2px 4px rgba(27, 78, 163, 0.2), 0px 4px 8px rgba(41, 121, 255, 0.2);
+border-radius: 4px;
+border-color: white;
+font-weight: bold;
+}
+a{
+    text-decoration: none;
+}

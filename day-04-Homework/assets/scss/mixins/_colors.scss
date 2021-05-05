@@ -1,0 +1,16 @@
+@mixin set_colors($colorname,$colorcode,$colortype){
+    $colorsort:0;
+    @if $colortype == 'bg' {
+        $colorsort : 'background-color';
+    }
+    @else if $colortype == 'brd'{
+        $colorsort : 'border-color';
+    }
+    @else if $colortype == 'txt'{
+        $colorsort : 'color';
+    }
+    .#{$colortype}-#{$colorname}{
+        #{$colorsort}: $colorcode;
+    }
+}
+
