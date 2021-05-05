@@ -1,5 +1,5 @@
 @mixin set-margin-or-padding($key) {
-    @for $i from 1 through 5 {
+    @for $i from 0 through 5 {
         .#{$key}-#{$i}{
             @if $key == 'p' {
                 padding: #{$i*5}px;

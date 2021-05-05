@@ -45,3 +45,30 @@ font-weight: bold;
 a{
     text-decoration: none;
 }
+.font-bold{
+font-weight: bold;
+}
+.border-none{
+    border:none;
+}
+.list-style-none{
+    list-style: none;
+}
+#departments{
+    @extend #signin;
+    background: url('../images/deportments.png') no-repeat 15px 11px;
+    padding:  10px 4rem;
+
+}
+
+.top-aside{
+    ul{
+        list-style-image: url('../images/arrow-right.png');
+        & > span{
+            @extend .txt-gray;
+        }
+    }
+}
+#expand{
+    @extend .txt-primary, .bg-secondary, .font-bold, .border-none , .p-1;
+}

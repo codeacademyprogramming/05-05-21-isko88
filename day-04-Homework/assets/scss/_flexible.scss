@@ -10,7 +10,7 @@
 }
 
 .container{
-    @include make-container(20px);
+    @include make-container(7rem);
 }
 .justify-center{
     justify-content: center;
