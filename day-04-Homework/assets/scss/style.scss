@@ -18,9 +18,11 @@ $breaker : (
 
 @include set-margin-or-padding('p');
 @include set-margin-or-padding('m');
-
+%mb{
+    margin-bottom: 2rem;
+}
 header{
-    margin-bottom:2rem;
+    @extend %mb;
 }
 .logo {
     svg{
@@ -91,6 +93,7 @@ font-weight: bold;
 
 section{
     .sort-section{
+        @extend %mb;
         select{
             @extend .p-2;
         }
@@ -109,5 +112,14 @@ section{
             @extend .p-3,.border-none;
             background: url(../images/view-sort2.png) no-repeat center;   
         }
+    }
+    .related{
+        @extend %mb;
+      a{
+          text-decoration: none;
+          @extend .txt-black,.p-2;
+          border-radius:99px;
+
+      }
     }
 }

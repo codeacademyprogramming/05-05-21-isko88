@@ -26,7 +26,7 @@
   background-color: #EBF2FF;
 }
 
-.txt-black {
+.txt-black, section .related a {
   color: #000;
 }
 
@@ -473,7 +473,7 @@
   padding: 5px;
 }
 
-.p-2, section .sort-section select {
+.p-2, section .sort-section select, section .related a {
   padding: 10px;
 }
 
@@ -513,7 +513,7 @@
   margin: 25px;
 }
 
-header {
+header, section .sort-section, section .related {
   margin-bottom: 2rem;
 }
 
@@ -586,5 +586,10 @@ section .sort-section #btn-view-sort-1 {
 
 section .sort-section #btn-view-sort-2 {
   background: url(../images/view-sort2.png) no-repeat center;
+}
+
+section .related a {
+  text-decoration: none;
+  border-radius: 99px;
 }
 /*# sourceMappingURL=style.css.map */
