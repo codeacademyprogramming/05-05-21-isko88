@@ -42,7 +42,7 @@
   color: #313dee;
 }
 
-.txt-gray, .top-aside ul > span {
+.txt-gray, .top-aside > ul span {
   color: #afafaf;
 }
 
@@ -555,7 +555,16 @@ a {
   padding: 10px 4rem;
 }
 
-.top-aside ul {
+.top-aside > ul {
   list-style-image: url("../images/arrow-right.png");
+  padding-left: 0;
+}
+
+.center-aside {
+  margin-bottom: 1rem;
+}
+
+.center-aside .checkbox, .bottom-aside .checkbox {
+  padding: 5px;
 }
 /*# sourceMappingURL=style.css.map */

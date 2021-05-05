@@ -62,13 +62,25 @@ font-weight: bold;
 }
 
 .top-aside{
-    ul{
+    &>ul{
+    
         list-style-image: url('../images/arrow-right.png');
-        & > span{
+        padding-left: 0;
+        span{
             @extend .txt-gray;
         }
+      
     }
 }
 #expand{
     @extend .txt-primary, .bg-secondary, .font-bold, .border-none , .p-1;
+}
+.center-aside{
+    margin-bottom: 1rem;
+}
+.center-aside,.bottom-aside{
+    
+    .checkbox{
+        padding: 5px;
+    }
 }
