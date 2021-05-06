@@ -489,7 +489,7 @@
   padding: 10px;
 }
 
-.p-3, section .sort-section #btn-view-sort-1, section .sort-section #btn-view-sort-2 {
+.p-3, section .sort-section #btn-view-sort-1, section .sort-section #btn-view-sort-2, .components .userflows, .components .styled-components, .components .reusable {
   padding: 15px;
 }
 
@@ -636,5 +636,15 @@ section #item-list .card .item-img img {
 
 section #item-list .card .item-rank img {
   width: 70%;
+}
+
+.components {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.components .userflows, .components .styled-components, .components .reusable {
+  height: 166px;
+  border-radius: 4px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -173,4 +173,17 @@ section{
             }
         }
     }
+   
+}
+.components{
+    display: flex;
+    justify-content: flex-end;
+    
+    .userflows,.styled-components,.reusable{
+        @extend .p-3;
+        height: 166px;
+        border-radius: 4px;
+        
+    }
+   
 }
