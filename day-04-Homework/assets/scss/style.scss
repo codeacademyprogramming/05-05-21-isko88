@@ -18,6 +18,11 @@ $breaker : (
 
 @include set-margin-or-padding('p');
 @include set-margin-or-padding('m');
+
+body{
+  font-family: 'Inter', sans-serif;;
+}
+
 %mb{
     margin-bottom: 2rem;
 }
@@ -53,6 +58,9 @@ a{
 }
 .font-bold{
 font-weight: bold;
+}
+.text-center{
+    text-align: center;
 }
 .border-none{
     border:none;
@@ -117,9 +125,45 @@ section{
         @extend %mb;
       a{
           text-decoration: none;
-          @extend .txt-black,.p-2;
+          @extend .txt-black,.p-1;
           border-radius:99px;
 
       }
+    }
+    %padding-y{
+        padding:  5px 0;
+    }
+    #item-list{
+        .card{
+            padding: 10px;
+            .item-img{
+                img{
+                    width: 100%;
+                }
+            }
+            .item-title,
+            .item-price,
+            .item-description,
+            .item-rank{
+                @extend %padding-y;
+            }
+            .item-title{
+              
+            }
+            .item-price{
+              
+            }
+            .item-description{
+              
+            }
+            .item-rank{
+                img{
+                    width: 70%;
+                }
+               #watch-btn{
+                   @extend #signin;
+               }
+            }
+        }
     }
 }

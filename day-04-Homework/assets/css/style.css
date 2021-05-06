@@ -18,6 +18,10 @@
   background-color: #EBF2FF;
 }
 
+.bg-sky-blue {
+  background-color: #5c76e9;
+}
+
 .bg-gray {
   background-color: #EDEDF0;
 }
@@ -125,8 +129,16 @@
   justify-content: space-evenly;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .align-center {
   align-items: center;
+}
+
+.box-sizing {
+  box-sizing: border-box;
 }
 
 .col-1 {
@@ -469,11 +481,11 @@
   padding: 0px;
 }
 
-.p-1, #expand {
+.p-1, #expand, section .related a {
   padding: 5px;
 }
 
-.p-2, section .sort-section select, section .related a {
+.p-2, section .sort-section select {
   padding: 10px;
 }
 
@@ -513,6 +525,10 @@
   margin: 25px;
 }
 
+body {
+  font-family: 'Inter', sans-serif;
+}
+
 header, section .sort-section, section .related {
   margin-bottom: 2rem;
 }
@@ -525,7 +541,7 @@ header, section .sort-section, section .related {
   border-radius: 99px;
 }
 
-#signin, #departments {
+#signin, #departments, section #item-list .card .item-rank #watch-btn {
   border: 1px solid #9DC2FF;
   border-radius: 4px;
   font-weight: bold;
@@ -544,6 +560,10 @@ a {
 
 .font-bold, #expand {
   font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .border-none, #expand, section .sort-section #btn-view-sort-1, section .sort-section #btn-view-sort-2 {
@@ -591,5 +611,24 @@ section .sort-section #btn-view-sort-2 {
 section .related a {
   text-decoration: none;
   border-radius: 99px;
+}
+
+section #item-list .card .item-title,
+section #item-list .card .item-price,
+section #item-list .card .item-description,
+section #item-list .card .item-rank {
+  padding: 5px 0;
+}
+
+section #item-list .card {
+  padding: 10px;
+}
+
+section #item-list .card .item-img img {
+  width: 100%;
+}
+
+section #item-list .card .item-rank img {
+  width: 70%;
 }
 /*# sourceMappingURL=style.css.map */
